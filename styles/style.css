@@ -113,7 +113,7 @@
     flex-flow: column-reverse wrap;
     width: 50%;
     height: 300px;
-    background-image: url("../../images/daily_planet.jpg");
+    background-image: url("../images/daily_planet.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -130,7 +130,7 @@
     flex-flow: column-reverse wrap;
     width: 50%;
     height: 300px;
-    background-image: url("../../images/gcpd2.jpg");
+    background-image: url("../images/gcpd2.jpg");
     background-size: cover;
     background-repeat: space;
 }
