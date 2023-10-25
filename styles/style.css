@@ -1,7 +1,6 @@
 .main {
     display: flex;
     flex-flow: column wrap;
-    row-gap: 10px;
     margin: 0 auto;
     max-width: 1200px;
     margin: 2% 10%;
@@ -13,14 +12,24 @@
     margin: 0;
 }
 
-.main h4 {
-    font-weight: normal;
-    font-size: 10px;
+.main h3 {
+    font-weight: bold;
+    font-size: 1em;
     margin: 0;
 }
 
-.main p{
+.main h4 {
+    font-weight: normal;
+    font-size: 1em;
+    margin: 0;
+}
+
+.main p {
     margin: 2px;
+}
+
+.main img {
+    object-fit:cover;
 }
 
 .header {
@@ -54,6 +63,10 @@
     /* padding: 0 10px 0 0; */
 }
 
+.s1, .s2, .s3, .footer {
+    margin: 50px 0;
+} 
+
 .s1 {
     display: flex;
     flex-flow: row wrap;
@@ -72,48 +85,80 @@
     max-width: 60%;
 }
 
-.s1-d2 > img {
-    object-fit:cover;
-}
-
 .s2 {
     display: flex;
     max-width: 100%;
-    background-color: dimgray;
+    /* background-color: dimgray; */
     justify-content: center;
     text-align: center;
-}
-
-.s2-d1 > h1 {
-    font-size: 2em;
-    margin: 0;
 }
 
 .s3 {
     display: flex;
+    flex-flow: column wrap;
     max-width: 100%;
-    background-color: dimgray;
+    /* background-color: dimgray; */
     justify-content: center;
     text-align: center;
 }
 
-.s4 {
+.s3-d2 {
+    display: flex;
+    flex-flow: row wrap;
+    row-gap: 10px;
+}
+
+.left {
+    display: flex;
+    flex-flow: column-reverse wrap;
+    width: 50%;
+    height: 300px;
+    background-image: url("../../images/daily_planet.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.left h3 {
+    color: black;
+    font-weight: bold;
+    font-size: 1.5em;
+    background-color: #ffffff99;
+}
+
+.right {
+    display: flex;
+    flex-flow: column-reverse wrap;
+    width: 50%;
+    height: 300px;
+    background-image: url("../../images/gcpd2.jpg");
+    background-size: cover;
+    background-repeat: space;
+}
+
+.right h3 {
+    color: black;
+    font-weight: bold;
+    font-size: 1.5em;
+    background-color: #ffffff99;
+}
+
+.footer {
     display: flex;
     max-width: 100%;
-    padding: 0 10%;
-    background-color: dimgray;
+    padding: 10%;
     justify-content: space-between;
     text-align: center;
 }
 
-.s4-d1 {
+.footer-d1 {
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
     max-width: 50%;
     text-align: justify;
 }
 
-.s4-d2 {
+.footer-d2 {
     max-width: 50%;
     text-align: center;
 }
